@@ -1,0 +1,27 @@
+@model ExpenseTracker.Models.Expense
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Expense</title>
+</head>
+<body>
+    <h1>Add Expense</h1>
+
+    <form asp-action="AddExpense" method="post">
+        <div>
+            <label asp-for="Description">Description:</label>
+            <input asp-for="Description" />
+        </div>
+        <div>
+            <label asp-for="Amount">Amount:</label>
+            <input asp-for="Amount" />
+        </div>
+        <div>
+            <label asp-for="Category">Category:</label>
+            <input asp-for="Category" />
+        </div>
+        <button type="submit">Add Expense</button>
+    </form>
+</body>
+</html>
